@@ -6,6 +6,11 @@ name: dy-hook
 description: 抖音文案钩子语料库（只读）：关键词搜索、博主作品、作品详情、评论、热榜。触发：抖音搜索、热搜、评论、需求挖掘、痛点、作品详情、博主作品、对标账号、播放量、选题、舆情、竞品。小红书、快手、B站、微博、公众号不要用本技能。sec_uid、aweme_id、douyin search、douyin hot、douyin detail、douyin comments。
 license: MIT
 version: 1.5.1
+display_name: "抖音文案钩子｜爆款标题·开头3秒·口播脚本·语料复用"
+display_name_en: "Douyin Hook"
+description_zh: "抖音文案钩子语料库（只读，无需登录你的抖音账号，不发布不点赞不评论，无风控封号问题）：把公开视频的标题文案、评论区高赞话术、博主历史作品批量取回，全部输出结构化 JSON，可直接交给 AI 做标题模板复用、开头 3 秒钩子拆解、口播脚本改写和语料库沉淀。\n\n六类取数能力：①关键词搜索视频与图文，支持综合/最多点赞/最新排序及 1 天/7 天/半年时间范围；②用户与达人搜索，按关键词找对标账号；③博主作品抓取，加 --limit 0 只取粉丝数与获赞数；④单条作品详情：文案、播放、点赞、评论、收藏、分享、标签；⑤视频与图文评论抓取，可做高赞话术归集；⑥实时热榜约 50 条，追当天流量入口。\n\n钩子打法：用点赞排序找高赞开头，从评论捞用户原话与痛点，用热榜定当日选题。\n\n规模：按量 Token 单次最多 10000 条；包月视频/用户/作品最多 30 条、评论最多 50 条，超限返回 PLAN_LIMIT。仅需 Node.js 16.14+ 与 GUAIKEI_API_TOKEN，零第三方依赖。"
+description_en: "Read-only Douyin copywriting-hook corpus, no login, no ban risk. Pull public captions, top-comment phrasing and creator post history in bulk as structured JSON, so AI can reuse title templates, deconstruct the first-3-second hook and rewrite spoken scripts.\n\nSix capabilities: 1) Keyword search over videos and image posts, sorted by relevance, likes or newest, with 1/7/180-day windows. 2) User and creator search for benchmark accounts. 3) Creator post listing, plus interactions-only mode (--limit 0) for follower and like counts. 4) Post detail: caption, plays, likes, comments, collects, shares, tags. 5) Comment scraping to harvest high-like phrasing. 6) Real-time hot list (~50 entries).\n\nHook: sort by likes for strong openings, mine comments for wording and pain points, use the hot list to pick daily topics.\n\nScale: pay-as-you-go up to 10,000 items per call; monthly plans cap search and posts at 30, comments at 50, then PLAN_LIMIT. Needs Node.js 16.14+ and GUAIKEI_API_TOKEN."
+author: "新郑市怪奇信息技术工作室"
 metadata:
   openclaw:
     emoji: "🎬"
